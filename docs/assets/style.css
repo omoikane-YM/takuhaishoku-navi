@@ -100,7 +100,7 @@ img { max-width: 100%; display: block; }
   max-width: var(--max-width);
   margin: 0 auto;
 }
-.hero h1 { font-size: 1.8rem; margin-bottom: 10px; color: #4a2e1a; }
+.hero h1 { font-size: 1.8rem; line-height: 1.4; margin-bottom: 10px; color: #4a2e1a; }
 .hero p { color: #6b4e36; max-width: 640px; }
 
 .disclosure-badge {
