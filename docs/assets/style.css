@@ -25,7 +25,7 @@ body {
 }
 
 main p, main li { line-height: 1.85; }
-main p { text-wrap: pretty; }
+main p, main li, .hero p { text-wrap: balance; overflow-wrap: break-word; word-break: normal; }
 
 h1, h2, h3, h4 {
   text-wrap: balance;
