@@ -192,6 +192,16 @@ section.intro-block h2 { margin-top: 0; font-size: 1.1rem; }
   margin: 30px 0;
 }
 
+.notice-box {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  background: #fdf6e9;
+  border-left: 3px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin: 16px 0 0;
+}
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
