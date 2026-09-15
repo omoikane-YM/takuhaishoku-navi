@@ -25,6 +25,14 @@ body {
 }
 
 main p, main li { line-height: 1.85; }
+main p { text-wrap: pretty; }
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  word-break: normal;
+  line-break: strict;
+}
 
 main h2 {
   font-size: 1.3rem;
@@ -245,6 +253,16 @@ section.intro-block h2 { margin-top: 0; font-size: 1.2rem; border-bottom: none; 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px;
 }
+
+.note-list {
+  margin: 10px 0;
+  padding-left: 1.3em;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+.note-list li { margin: 0 0 6px; }
+.note-list li:last-child { margin-bottom: 0; }
 .persona-list li {
   background: #eaf2ec;
   color: #26402f;
