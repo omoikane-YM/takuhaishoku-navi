@@ -335,6 +335,9 @@ section.intro-block h2 { margin-top: 0; font-size: 1.2rem; border-bottom: none; 
 .compare-table tbody tr:last-child td { border-bottom: none; }
 .compare-table tbody tr:hover { background: #fff8f0; }
 .compare-table .status-pending { color: var(--color-text-muted); font-size: 0.88rem; }
+.compare-table tbody tr.clickable-row { cursor: pointer; }
+.compare-table tbody tr.clickable-row:hover { background: #ffe9d2; }
+.compare-table tbody tr.clickable-row:hover td:last-child a { text-decoration: underline; }
 
 .merit-demerit {
   display: grid;
