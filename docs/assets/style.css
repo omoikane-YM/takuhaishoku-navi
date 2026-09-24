@@ -312,6 +312,26 @@ section.intro-block h2 { margin-top: 0; font-size: 1.2rem; border-bottom: none; 
 }
 .note-list li { margin: 0 0 6px; }
 .note-list li:last-child { margin-bottom: 0; }
+
+.quote-review {
+  margin: 16px 0;
+  padding: 14px 18px;
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.quote-review p {
+  margin: 0 0 6px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+.quote-review cite {
+  display: block;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: var(--color-text-muted);
+}
 .persona-list li {
   background: #eaf2ec;
   color: #26402f;
