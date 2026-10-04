@@ -7,11 +7,12 @@ s = open(p, encoding='utf8').read()
 
 # --- 新着記事を既存HTMLから抽出 ---
 m = re.search(r'<ul class="(?:article-list|new-list)">(.*?)</ul>', s, re.S)
-items = re.findall(r'<a href="([^"]+)">(.*?)</a>\s*<p>(.*?)</p>', m.group(1), re.S)
+items = re.findall(r'<li>(?:<span class="cat">(.*?)</span>)?\s*<a href="([^"]+)">(.*?)</a>\s*<p>(.*?)</p>', m.group(1), re.S)
 new_li = []
-for href, title, desc in items:
+for chip0, href, title, desc in items:
     cat = re.match(r'【(.*?)】', desc)
-    chip = f'<span class="cat">{cat.group(1)}</span>' if cat else ''
+    chip_name = chip0 or (cat.group(1) if cat else '')
+    chip = f'<span class="cat">{chip_name}</span>' if chip_name else ''
     desc2 = re.sub(r'^【.*?】', '', desc)
     new_li.append(f'      <li>{chip}<a href="{href}">{title}</a><p>{desc2}</p></li>')
 new_list = '\n'.join(new_li)
