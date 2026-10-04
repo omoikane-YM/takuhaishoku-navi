@@ -334,7 +334,7 @@ section.intro-block p:last-child { margin-bottom: 0; }
   padding: 20px 22px;
   box-shadow: var(--shadow-hard);
 }
-.merit-demerit .merit-box h4 {
+.merit-demerit .merit-box h3 {
   display: inline-block;
   margin: -34px 0 12px;
   padding: 2px 14px;
@@ -360,7 +360,7 @@ section.intro-block p:last-child { margin-bottom: 0; }
   border-radius: var(--radius);
   padding: 20px 20px;
 }
-.merit-demerit .demerit-box h4 {
+.merit-demerit .demerit-box h3 {
   display: inline-block;
   margin: -34px 0 12px;
   padding: 2px 14px;
@@ -481,8 +481,8 @@ section.intro-block p:last-child { margin-bottom: 0; }
   border-radius: 16px;
   padding: 16px 20px;
 }
-.faq-item h4 { margin: 0 0 8px; font-size: 1rem; line-height: 1.55; color: var(--ink); }
-.faq-item h4::first-letter { color: var(--color-primary); font-size: 1.15em; }
+.faq-item h3 { margin: 0 0 8px; font-size: 1rem; line-height: 1.55; color: var(--ink); }
+.faq-item h3::first-letter { color: var(--color-primary); font-size: 1.15em; }
 .faq-item p { margin: 0; font-size: 0.95rem; color: #4a3f35; padding-left: 0; }
 .faq-item p::first-letter { color: var(--color-accent); font-weight: 700; }
 
@@ -849,3 +849,7 @@ p > a[style*="var(--color-primary)"][style*="border-radius:999px"]:active { tran
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* 記事の公開日・更新日 */
+.post-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 12px 0 10px !important; padding-right: 0 !important; font-size: 0.78rem; color: var(--color-text-muted); }
+.post-meta span::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: var(--color-warm); border: 1.5px solid var(--ink); vertical-align: 1px; }

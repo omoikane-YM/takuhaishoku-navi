@@ -56,7 +56,7 @@ def build(a):
     personas = '\n'.join(f'      <li>{p}</li>' for p in a['personas'])
     pers_extra = ''.join(f'\n    <p>{p}</p>' for p in a.get('persona_extra', []))
     faq_html = '\n'.join(
-        f'      <div class="faq-item">\n        <h4>Q. {esc(q)}</h4>\n        <p>A. {esc(ans)}</p>\n      </div>' for q, ans in a['faq'])
+        f'      <div class="faq-item">\n        <h3>Q. {esc(q)}</h3>\n        <p>A. {esc(ans)}</p>\n      </div>' for q, ans in a['faq'])
     related = '\n'.join(f'      <li><a href="{h}">{esc(title_of(p))}</a></li>' for h, p in a['related'])
     b = a['banner']
     banner_img = (f'https://{b["host"]}.a8.net/svt/bgt?aid={b["aid"]}&amp;wid=005&amp;eno=01&amp;mid={b["mid"]}&amp;mc=1')
@@ -74,7 +74,7 @@ def build(a):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&amp;display=swap">
-<link rel="stylesheet" href="../../assets/style.css?v=7">
+<link rel="stylesheet" href="../../assets/style.css?v=8">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="宅配食ナビ">
@@ -143,6 +143,7 @@ def build(a):
   <section class="hero">
     <div class="hero-inner">
       <h1>{esc(a['h1'])}</h1>
+      <p class="post-meta"><span>公開日 <time datetime="2026-10-04">2026年10月4日</time></span></p>
       <p>{esc(a['lead'])}</p>
     </div>
   </section>
@@ -188,13 +189,13 @@ def build(a):
     <h2>メリット</h2>
     <div class="merit-demerit">
       <div class="merit-box">
-        <h4>良い評判として多く見られる点</h4>
+        <h3>良い評判として多く見られる点</h3>
         <ul>
 {merits}
         </ul>
       </div>
       <div class="demerit-box">
-        <h4>気になる点</h4>
+        <h3>気になる点</h3>
         <ul>
 {demerits}
         </ul>
