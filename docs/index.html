@@ -8,7 +8,10 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <title>宅配食ナビ｜ミールキット・宅配弁当を目的別に比較</title>
 <meta name="description" content="ミールキット・冷凍宅配弁当・高齢者向け宅配食・離乳食宅配・食材宅配(生協系)・キッチン用品まで、食にまつわるサービスを目的別に網羅して紹介する比較サイトです。">
-<link rel="stylesheet" href="assets/style.css?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css?v=7">
 <link rel="canonical" href="https://omoikane-ym.github.io/takuhaishoku-navi/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="宅配食ナビ">
@@ -57,178 +60,253 @@
 </header>
 
 <main>
-  <section class="hero hero--photo">
-    <div class="hero-inner">
+  <section class="top-hero">
+    <div class="top-hero__text">
       <span class="disclosure-badge">当サイトはアフィリエイト広告を利用しています</span>
-      <h1>今日の献立に迷ったら。<br>宅配食・ミールキット・介護食を目的別に選べる比較サイト</h1>
-      <p>忙しい毎日の食事、離乳食、高齢者の見守り食まで――出来立てのおいしさとほっとする栄養バランスを、目的に合わせて探せるようにカテゴリ別にまとめています。</p>
+      <h1>手作りみたいな<em>ごちそう</em>が、<br>家に届く。<br><span class="red">空いた時間は、じぶんの時間。</span></h1>
+      <p class="lead">ミールキット・冷凍宅配弁当・高齢者向け宅配食・離乳食まで。家で作る料理に負けないおいしさの宅配食を、目的別に比べて選べます。</p>
+      <div class="cta-row">
+        <a class="btn btn--red" href="#categories">目的から探す</a>
+        <a class="btn" href="#free-time">1日がどう変わる？</a>
+      </div>
+    </div>
+    <div class="top-hero__visual" aria-hidden="true">
+      <div class="plate plate--main"></div>
+      <div class="plate plate--bento"></div>
+      <div class="plate plate--soup"></div>
+      <div class="sticker sticker--a"><span>できたて<small>のおいしさ</small></span></div>
+      <div class="sticker sticker--b"><span>自由時間<small>が増える</small></span></div>
     </div>
   </section>
 
-  <section class="benefit-section">
-    <h2 class="benefit-heading">宅配食に任せると、毎日はここまで変わります</h2>
-    <div class="benefit-grid">
-      <div class="benefit-card">
-        <div class="benefit-icon">🕐</div>
-        <p class="benefit-title">「今日何作ろう…」から解放される</p>
-        <p class="benefit-desc">献立を考える時間も、買い物や後片付けの手間もなくなり、空いた時間を家族との団らんや自分の休息にあてられます。</p>
+  <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>献立を考える時間、おやすみ。</span><span>買い物の荷物、おやすみ。</span><span>おいしさは、そのまま。</span><span>空いた時間は、じぶんのために。</span><span>今日の夕食は、届いている。</span><span>献立を考える時間、おやすみ。</span><span>買い物の荷物、おやすみ。</span><span>おいしさは、そのまま。</span><span>空いた時間は、じぶんのために。</span><span>今日の夕食は、届いている。</span></div></div>
+
+  <section id="free-time">
+    <div class="sec-head">
+      <span class="eyebrow">TIME TO YOURSELF</span>
+      <h2>宅配食にすると、夕方がこう変わります</h2>
+      <p>献立・買い物・調理・片付け。毎日くり返す“食のおしごと”を、おいしいまま減らせます。</p>
+    </div>
+    <div class="timeline">
+      <div class="tl tl--before">
+        <span class="tl__label">これまで（自炊）</span>
+        <ol>
+          <li><span class="dot">💭</span><span class="name">今日の献立を考える</span></li>
+          <li><span class="dot">🛒</span><span class="name">スーパーで買い物</span></li>
+          <li><span class="dot">🍳</span><span class="name">下ごしらえ・調理</span></li>
+          <li class="keep"><span class="dot">🍽️</span><span class="name">いただきます</span></li>
+          <li><span class="dot">🧽</span><span class="name">片付け・洗い物</span></li>
+        </ol>
+        <p class="tl__foot">※一般的な自炊の流れのイメージです。</p>
       </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">🥦</div>
-        <p class="benefit-title">栄養バランスが整いやすくなる</p>
-        <p class="benefit-desc">管理栄養士監修のメニューなら、忙しくて自炊が偏りがちな日でも、栄養バランスを気にせず食べられます。</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">💰</div>
-        <p class="benefit-title">食費・食材のムダが減らせる</p>
-        <p class="benefit-desc">使いきれず捨ててしまう食材や、ついつい増える外食・コンビニ利用を抑えられ、家計の見通しも立てやすくなります。</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">🧡</div>
-        <p class="benefit-title">大切な人の食事の不安が減る</p>
-        <p class="benefit-desc">離乳食から高齢者の見守り食まで揃うから、「ちゃんと食べられているか」という心配を手放せます。</p>
+      <div class="tl tl--after">
+        <span class="tl__label">宅配食なら</span>
+        <ol>
+          <li><span class="dot">📦</span><span class="name">自宅に届く（献立も食材も手配ずみ）</span></li>
+          <li><span class="dot">♨️</span><span class="name">温める・仕上げるだけ</span></li>
+          <li><span class="dot">🍽️</span><span class="name">いただきます</span></li>
+          <li class="free"><span class="dot">✨</span><span class="name">空いた時間は、じぶんのために</span></li>
+        </ol>
+        <p class="tl__foot">散歩・趣味・家族との時間・ゆっくりお風呂。使い方はあなた次第。</p>
       </div>
     </div>
   </section>
 
-  <section class="category-grid">
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">3 PROMISES</span>
+      <h2>「ラクする」だけで終わらせない、3つの選び方</h2>
+      <p>時短と引き換えに食事の満足度を下げたくない。そんな方のための比較ポイントです。</p>
+    </div>
+    <div class="promise-grid">
+      <div class="promise"><div class="promise__img" style="background-image:url('assets/crop-wok.webp')"></div><span class="promise__no">1</span>
+        <div class="promise__body"><h3>家で作る料理に近いおいしさか</h3><p>素材や調理法にこだわり、できたての満足感を目指すサービスを比べます。</p></div></div>
+      <div class="promise"><div class="promise__img" style="background-image:url('assets/crop-veg.webp')"></div><span class="promise__no">2</span>
+        <div class="promise__body"><h3>栄養バランスを任せられるか</h3><p>管理栄養士が監修するメニューなど、毎日食べても安心できるかを確認します。</p></div></div>
+      <div class="promise"><div class="promise__img" style="background-image:url('assets/crop-bento.webp')"></div><span class="promise__no">3</span>
+        <div class="promise__body"><h3>自分の暮らしに合う手軽さか</h3><p>温めるだけ、少し作る、まとめて届くなど、ライフスタイルに合う形で選べます。</p></div></div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <div class="sec-head">
+      <span class="eyebrow">CATEGORY</span>
+      <h2>目的から宅配食を探す</h2>
+      <p>誰のための食事か、どんな暮らしに合わせたいか。気になるカテゴリから見てみてください。</p>
+    </div>
+    <div class="category-grid">
     <article class="category-card">
-      <div class="card-icon">🥘</div>
-      <span class="tag">共働き・時短</span>
-      <h2><a href="mealkit/">ミールキット</a></h2>
-      <p>Oisix・ヨシケイなど、献立とカット済み食材がセットになったミールキットを紹介します。</p>
-      <a class="card-link" href="mealkit/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-veg.webp')"><div class="card-icon">🥘</div></div>
+      <div class="card-body">
+        <span class="tag">共働き・時短</span>
+        <h2><a href="mealkit/">ミールキット</a></h2>
+        <p>Oisix・ヨシケイなど、献立とカット済み食材がセットになったミールキットを紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🍱</div>
-      <span class="tag">一人暮らし・ダイエット</span>
-      <h2><a href="frozen-meal/">冷凍宅配弁当</a></h2>
-      <p>nosh・GREEN SPOON・FIT FOOD HOMEなど、レンジで完結する冷凍宅配食を紹介します。</p>
-      <a class="card-link" href="frozen-meal/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-bento.webp')"><div class="card-icon">🍱</div></div>
+      <div class="card-body">
+        <span class="tag">一人暮らし・ダイエット</span>
+        <h2><a href="frozen-meal/">冷凍宅配弁当</a></h2>
+        <p>nosh・GREEN SPOON・FIT FOOD HOMEなど、レンジで完結する冷凍宅配食を紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🍲</div>
-      <span class="tag">親の見守り・介護</span>
-      <h2><a href="senior-meal/">高齢者・介護食宅配</a></h2>
-      <p>まごころケア食・宅配クック123など、栄養バランスや制限食に配慮した宅配食を紹介します。</p>
-      <a class="card-link" href="senior-meal/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-soup.webp')"><div class="card-icon">🍲</div></div>
+      <div class="card-body">
+        <span class="tag">親の見守り・介護</span>
+        <h2><a href="senior-meal/">高齢者・介護食宅配</a></h2>
+        <p>まごころケア食・宅配クック123など、栄養バランスや制限食に配慮した宅配食を紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🍼</div>
-      <span class="tag">子育て</span>
-      <h2><a href="baby-food/">離乳食宅配</a></h2>
-      <p>手作りが大変な離乳食期に役立つ、宅配の離乳食サービスを紹介します。</p>
-      <a class="card-link" href="baby-food/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-spoon.webp')"><div class="card-icon">🍼</div></div>
+      <div class="card-body">
+        <span class="tag">子育て</span>
+        <h2><a href="baby-food/">離乳食宅配</a></h2>
+        <p>手作りが大変な離乳食期に役立つ、宅配の離乳食サービスを紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🥬</div>
-      <span class="tag">安全・産直志向</span>
-      <h2><a href="coop-delivery/">食材宅配(生協・産直系)</a></h2>
-      <p>らでぃっしゅぼーや・生活クラブ・コープの宅配など、食材そのものを届けるサービスを紹介します。</p>
-      <a class="card-link" href="coop-delivery/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-veg.webp')"><div class="card-icon">🥬</div></div>
+      <div class="card-body">
+        <span class="tag">安全・産直志向</span>
+        <h2><a href="coop-delivery/">食材宅配(生協・産直系)</a></h2>
+        <p>らでぃっしゅぼーや・生活クラブ・コープの宅配など、食材そのものを届けるサービスを紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🔪</div>
-      <span class="tag">調理器具・食材保存</span>
-      <h2><a href="kitchen-goods/">キッチン用品</a></h2>
-      <p>包丁・フライパンから真空パック機まで、毎日の料理を快適にするキッチン用品を紹介します。</p>
-      <a class="card-link" href="kitchen-goods/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-wok.webp')"><div class="card-icon">🔪</div></div>
+      <div class="card-body">
+        <span class="tag">調理器具・食材保存</span>
+        <h2><a href="kitchen-goods/">キッチン用品</a></h2>
+        <p>包丁・フライパンから真空パック機まで、毎日の料理を快適にするキッチン用品を紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🎁</div>
-      <span class="tag">ギフト・ご当地グルメ</span>
-      <h2><a href="otoriyose/">お取り寄せグルメ</a></h2>
-      <p>馬刺し・和牛・カニ・海産物・京漬物など、産地から直送されるご当地物産を紹介します。</p>
-      <a class="card-link" href="otoriyose/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-bento.webp')"><div class="card-icon">🎁</div></div>
+      <div class="card-body">
+        <span class="tag">ギフト・ご当地グルメ</span>
+        <h2><a href="otoriyose/">お取り寄せグルメ</a></h2>
+        <p>馬刺し・和牛・カニ・海産物・京漬物など、産地から直送されるご当地物産を紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🏠</div>
-      <span class="tag">節税・返礼品</span>
-      <h2><a href="furusato/">ふるさと納税</a></h2>
-      <p>全国の特産品が届くふるさと納税サイトを紹介します。</p>
-      <a class="card-link" href="furusato/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-wok.webp')"><div class="card-icon">🏠</div></div>
+      <div class="card-body">
+        <span class="tag">節税・返礼品</span>
+        <h2><a href="furusato/">ふるさと納税</a></h2>
+        <p>全国の特産品が届くふるさと納税サイトを紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
     <article class="category-card">
-      <div class="card-icon">🌿</div>
-      <span class="tag">食習慣・健康サポート</span>
-      <h2><a href="health-food/">美容・健康食品</a></h2>
-      <p>お茶・粉末サプリ・プロテインなど、毎日の食習慣に取り入れやすい美容・健康食品を紹介します。</p>
-      <a class="card-link" href="health-food/">カテゴリを見る</a>
+      <div class="card-photo" style="background-image:url('assets/crop-soup.webp')"><div class="card-icon">🌿</div></div>
+      <div class="card-body">
+        <span class="tag">食習慣・健康サポート</span>
+        <h2><a href="health-food/">美容・健康食品</a></h2>
+        <p>お茶・粉末サプリ・プロテインなど、毎日の食習慣に取り入れやすい美容・健康食品を紹介します。</p>
+        <span class="card-link">カテゴリを見る</span>
+      </div>
     </article>
+    </div>
+  </section>
+
+  <section class="pick-wall">
+    <div class="sec-head">
+      <span class="eyebrow">PICK UP</span>
+      <h2>気になるサービスをのぞいてみる</h2>
+      <p>各カテゴリで紹介している宅配食サービスの一部です。（PR）</p>
+    </div>
+    <div class="pick-grid">
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCBRK+2HB4LU+3RK+2TW4GX" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www21.a8.net/svt/bgt?aid=260915600150&amp;wid=005&amp;eno=01&amp;mid=s00000000488017114000&amp;mc=1" width="336" height="280" alt="Oisixおためしセット" loading="lazy">
+        </a>
+        <span class="name">Oisixおためしセット</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCBRH+EWFNWY+4WD6+61RI9" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www23.a8.net/svt/bgt?aid=260915597901&amp;wid=005&amp;eno=01&amp;mid=s00000022857001016000&amp;mc=1" width="300" height="250" alt="DELIPICKS" loading="lazy">
+        </a>
+        <span class="name">DELIPICKS</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCBRK+5K1R4I+5E7E+60WN5" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www24.a8.net/svt/bgt?aid=260915600336&amp;wid=005&amp;eno=01&amp;mid=s00000025169001012000&amp;mc=1" width="336" height="280" alt="健康直球便" loading="lazy">
+        </a>
+        <span class="name">健康直球便</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCBRK+3FU9OY+4Z42+5ZU29" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www22.a8.net/svt/bgt?aid=260915600208&amp;wid=005&amp;eno=01&amp;mid=s00000023213001007000&amp;mc=1" width="300" height="250" alt="ファーストスプーン" loading="lazy">
+        </a>
+        <span class="name">ファーストスプーン</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCBRK+3LSLQQ+12N4+6DRLT" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www25.a8.net/svt/bgt?aid=260915600218&amp;wid=005&amp;eno=01&amp;mid=s00000005008001072000&amp;mc=1" width="300" height="250" alt="無農薬野菜のミレー" loading="lazy">
+        </a>
+        <span class="name">無農薬野菜のミレー</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCBRK+2VLJ4I+2DDC+BQQENL" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www29.a8.net/svt/bgt?aid=260915600174&amp;wid=005&amp;eno=01&amp;mid=s00000011064071003000&amp;mc=1" width="300" height="250" alt="tascaria FOOD SEALER" loading="lazy">
+        </a>
+        <span class="name">tascaria FOOD SEALER</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCCJK+2HB4LU+50BY+631SX" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www20.a8.net/svt/bgt?aid=260916608150&wid=005&eno=01&mid=s00000023371001022000&mc=1" width="300" height="250" alt="安心米" loading="lazy">
+        </a>
+        <span class="name">安心米</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCCJK+3SXT02+5IMU+60WN5" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www27.a8.net/svt/bgt?aid=260916608230&wid=005&eno=01&mid=s00000025743001012000&mc=1" width="300" height="250" alt="ふるさと本舗" loading="lazy">
+        </a>
+        <span class="name">ふるさと本舗</span></div>
+      <div class="hero-banner">
+        <span class="pr-tag">PR</span>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BCCJK+21TUVM+5UP0+5ZEMP" rel="nofollow sponsored noopener" target="_blank">
+        <img src="https://www28.a8.net/svt/bgt?aid=260916608124&amp;wid=005&amp;eno=01&amp;mid=s00000027306001005000&amp;mc=1" width="300" height="250" alt="あじかんごぼうリセットスープ" loading="lazy">
+        </a>
+        <span class="name">あじかんごぼうリセットスープ</span></div>
+    </div>
   </section>
 
   <section id="new-articles">
-    <h2>新着記事</h2>
-    <ul class="article-list">
-      <li>
-        <a href="frozen-meal/tsukurio/">ツクリオ(旧つくりおき.jp)の評判・メリット・デメリット</a>
-        <p>【冷凍宅配弁当】シェフと管理栄養士監修の出来立て手作り惣菜を冷蔵のまま届け、5分で食卓が完成する「ツクリオ」を紹介します。</p>
-      </li>
-      <li>
-        <a href="frozen-meal/soyokaze/">食のそよ風(kanau)の評判・メリット・デメリット</a>
-        <p>【冷凍宅配弁当】たんぱく質と食物繊維をダブルで摂れる冷凍弁当「kanau」など、管理栄養士監修の宅食を紹介します。</p>
-      </li>
-      <li>
-        <a href="otoriyose/shinjuku-saboten/">とんかつ新宿さぼてん通販サイトの評判・メリット・デメリット</a>
-        <p>【お取り寄せグルメ】老舗とんかつ専門店「さぼてん」の本格とんかつを、冷凍のまま自宅で味わえる通販サイトを紹介します。</p>
-      </li>
-      <li>
-        <a href="coop-delivery/sakanotochu/">坂ノ途中の評判・メリット・デメリット</a>
-        <p>【食材宅配(生協・産直系)】新規就農者や若手農家と提携し、化学合成農薬・化学肥料不使用の野菜を京都から届ける産直サービスを紹介します。</p>
-      </li>
-      <li>
-        <a href="frozen-meal/meals/">Meals（ミールズ）の評判・メリット・デメリット</a>
-        <p>【冷凍宅配弁当】レシピ動画メディア「デリッシュキッチン」がプロデュースする、主菜42種・副菜100種の豊富なラインナップの冷凍宅配弁当を紹介します。</p>
-      </li>
-      <li>
-        <a href="mealkit/yoshikei/">ヨシケイお試し5daysの評判・メリット・デメリット</a>
-        <p>【ミールキット】管理栄養士監修の献立を平日5日分、時短・簡単など7つのコースから選んで体験できるミールキットを紹介します。</p>
-      </li>
-      <li>
-        <a href="senior-meal/shokurakuzen/">食楽膳の評判は？料金・メリット・デメリットまとめ</a>
-        <p>【高齢者・介護食】通常食からソフト食・ムース食・ピューレ食まで4段階の食形態に対応する、嚥下配慮の冷凍惣菜宅配を紹介します。</p>
-      </li>
-      <li>
-        <a href="baby-food/mogumo/">モグモの評判は？料金・メリット・デメリットまとめ</a>
-        <p>【離乳食宅配】管理栄養士監修・無添加メニュー9割以上の冷凍幼児食を、累計300万食突破の実績とともに紹介します。</p>
-      </li>
-      <li>
-        <a href="kitchen-goods/panasonic-bistro/">パナソニックホームベーカリーBistroの評判・メリット・デメリット</a>
-        <p>【キッチン用品】最新ホームベーカリーを月額2,980円の新品レンタルで試せ、継続利用後は返却不要で買取もできるサブスクを紹介します。</p>
-      </li>
-      <li>
-        <a href="health-food/ajikan-gobou-reset-soup/">あじかんごぼうリセットスープの評判・メリット・デメリット</a>
-        <p>【美容・健康食品】1食でごぼう1.4本分・食物繊維12.5gを配合しながら、シャキシャキとした食べごたえに仕上げたスープを紹介します。</p>
-      </li>
-      <li>
-        <a href="furusato/furusato-honpo/">ふるさと本舗の評判・メリット・デメリット</a>
-        <p>【ふるさと納税】全国の美味しい特産品に特化した54,000件超の返礼品数と、控除シミュレーション機能が使えるふるさと納税サイトを紹介します。</p>
-      </li>
+    <div class="sec-head">
+      <span class="eyebrow">NEW</span>
+      <h2>新着記事</h2>
+    </div>
+    <ul class="new-list">
+      <li><span class="cat">冷凍宅配弁当</span><a href="frozen-meal/tsukurio/">ツクリオ(旧つくりおき.jp)の評判・メリット・デメリット</a><p>シェフと管理栄養士監修の出来立て手作り惣菜を冷蔵のまま届け、5分で食卓が完成する「ツクリオ」を紹介します。</p></li>
+      <li><span class="cat">冷凍宅配弁当</span><a href="frozen-meal/soyokaze/">食のそよ風(kanau)の評判・メリット・デメリット</a><p>たんぱく質と食物繊維をダブルで摂れる冷凍弁当「kanau」など、管理栄養士監修の宅食を紹介します。</p></li>
+      <li><span class="cat">お取り寄せグルメ</span><a href="otoriyose/shinjuku-saboten/">とんかつ新宿さぼてん通販サイトの評判・メリット・デメリット</a><p>老舗とんかつ専門店「さぼてん」の本格とんかつを、冷凍のまま自宅で味わえる通販サイトを紹介します。</p></li>
+      <li><span class="cat">食材宅配(生協・産直系)</span><a href="coop-delivery/sakanotochu/">坂ノ途中の評判・メリット・デメリット</a><p>新規就農者や若手農家と提携し、化学合成農薬・化学肥料不使用の野菜を京都から届ける産直サービスを紹介します。</p></li>
+      <li><span class="cat">冷凍宅配弁当</span><a href="frozen-meal/meals/">Meals（ミールズ）の評判・メリット・デメリット</a><p>レシピ動画メディア「デリッシュキッチン」がプロデュースする、主菜42種・副菜100種の豊富なラインナップの冷凍宅配弁当を紹介します。</p></li>
+      <li><span class="cat">ミールキット</span><a href="mealkit/yoshikei/">ヨシケイお試し5daysの評判・メリット・デメリット</a><p>管理栄養士監修の献立を平日5日分、時短・簡単など7つのコースから選んで体験できるミールキットを紹介します。</p></li>
+      <li><span class="cat">高齢者・介護食</span><a href="senior-meal/shokurakuzen/">食楽膳の評判は？料金・メリット・デメリットまとめ</a><p>通常食からソフト食・ムース食・ピューレ食まで4段階の食形態に対応する、嚥下配慮の冷凍惣菜宅配を紹介します。</p></li>
+      <li><span class="cat">離乳食宅配</span><a href="baby-food/mogumo/">モグモの評判は？料金・メリット・デメリットまとめ</a><p>管理栄養士監修・無添加メニュー9割以上の冷凍幼児食を、累計300万食突破の実績とともに紹介します。</p></li>
+      <li><span class="cat">キッチン用品</span><a href="kitchen-goods/panasonic-bistro/">パナソニックホームベーカリーBistroの評判・メリット・デメリット</a><p>最新ホームベーカリーを月額2,980円の新品レンタルで試せ、継続利用後は返却不要で買取もできるサブスクを紹介します。</p></li>
+      <li><span class="cat">美容・健康食品</span><a href="health-food/ajikan-gobou-reset-soup/">あじかんごぼうリセットスープの評判・メリット・デメリット</a><p>1食でごぼう1.4本分・食物繊維12.5gを配合しながら、シャキシャキとした食べごたえに仕上げたスープを紹介します。</p></li>
+      <li><span class="cat">ふるさと納税</span><a href="furusato/furusato-honpo/">ふるさと本舗の評判・メリット・デメリット</a><p>全国の美味しい特産品に特化した54,000件超の返礼品数と、控除シミュレーション機能が使えるふるさと納税サイトを紹介します。</p></li>
     </ul>
   </section>
 
-  <section class="intro-block">
+  <section class="intro-block" style="margin-top:70px">
     <h2>このサイトについて</h2>
     <p>「宅配食ナビ」は、共働き世帯の時短ニーズから、一人暮らしの食事管理、離乳食、高齢の家族の見守り食まで、宅配食・ミールキットサービスを目的別に探せるように情報を整理した比較サイトです。</p>
     <p>当サイトの記事は、公開されている利用者の声や各社の公式情報をもとに第三者視点で構成しており、運営者自身の体験として記載しているものではありません。詳しくは<a href="about/">運営者情報・アフィリエイト開示</a>をご覧ください。</p>
-  </section>
-
-  <section class="intro-block">
-    <h2>スポンサーリンク</h2>
-    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
-      <div class="hero-banner" style="margin:0;">
-        <span class="pr-tag">PR</span>
-        <a href="https://px.a8.net/svt/ejp?a8mat=4BCAZG+5L8MC2+1WP2+1HNSR5" rel="nofollow sponsored noopener" target="_blank">
-          <img src="https://www22.a8.net/svt/bgt?aid=260914588338&wid=005&eno=01&mid=s00000008903009013000&mc=1" width="300" height="250" alt="TOSSY" loading="lazy">
-        </a>
-      </div>
-      <div class="hero-banner" style="margin:0;">
-        <span class="pr-tag">PR</span>
-        <a href="https://rpx.a8.net/svt/ejp?a8mat=4BCAZG+5KN6QA+2HOM+6I9N5&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0eb4779e.5d30c5ba.0eb4779f.b871e4e3%2Fa26091458492_4BCAZG_5KN6QA_2HOM_6I9N5%3Fpc%3Dhttp%253A%252F%252Ftravel.rakuten.co.jp%252F%26m%3Dhttp%253A%252F%252Ftravel.rakuten.co.jp%252F" rel="nofollow sponsored noopener" target="_blank">
-          <img src="http://hbb.afl.rakuten.co.jp/hsb/0ea7f9a4.79280dcb.0ea7f99d.1ac92fca/153145/" alt="楽天トラベル" loading="lazy">
-        </a>
-      </div>
-    </div>
   </section>
 
   <p class="affiliate-notice">本サイトはアフィリエイトプログラム(A8.net等)による収益を得ています。紹介する商品・サービスの選定や評価に、広告主から評価内容への直接的な影響はありません。</p>
