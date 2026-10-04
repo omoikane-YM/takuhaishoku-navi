@@ -142,6 +142,9 @@ def main():
         r = u.replace(BASE, '') + 'index.html'
         if not os.path.exists(os.path.join(ROOT, r)): issues['sitemapに存在しないページ'].append(u)
 
+    a = open(os.path.join(ROOT, 'sitemap.xml'), 'rb').read()
+    b = open(os.path.join(ROOT, 'sitemap-main.xml'), 'rb').read()
+    if a != b: issues['sitemap.xmlとsitemap-main.xmlが不一致'].append('copy docs/sitemap.xml docs/sitemap-main.xml')
     print(f'ページ数: {len(pages)}  sitemap: {len(sm)}')
     for k in sorted(issues, key=lambda x: -len(issues[x])):
         v = issues[k]

@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://omoikane-ym.github.io/takuhaishoku-navi/sitemap.xml
+Sitemap: https://omoikane-ym.github.io/takuhaishoku-navi/sitemap-main.xml
