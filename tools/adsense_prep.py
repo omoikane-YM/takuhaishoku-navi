@@ -23,7 +23,6 @@ body = """<main>
   <section class="intro-block">
     <h2>お問い合わせ窓口</h2>
     <p>「宅配食ナビ」に関するご連絡は、下記のメールアドレスまでお願いいたします。</p>
-    <p>メール：<a href="mailto:gdaye311@gmail.com">gdaye311@gmail.com</a></p>
     <p>内容を確認のうえ、通常3営業日以内を目安にご返信します。ただし、内容によってはお時間をいただく場合や、ご返信できない場合があります。</p>
   </section>
 
