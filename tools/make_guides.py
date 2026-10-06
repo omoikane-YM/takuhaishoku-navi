@@ -104,8 +104,10 @@ def build(g):
     toc = '\n'.join(f'      <li><a href="#{i}">{esc(t)}</a></li>' for i, t, _ in g['sections'])
     toc += '\n      <li><a href="#faq">よくある質問</a></li>'
     secs = ''
+    has_diag = any(i == 'diagnosis' for i, _, _ in g['sections'])
     for i, t, body in g['sections']:
-        secs += f'  <section class="intro-block" id="{i}">\n    <h2>{esc(t)}</h2>\n{links(body.strip())}\n  </section>\n\n'
+        hint = '\n    <p class="diag-hint">いちばん当てはまるものを選ぶと、おすすめの選び方が表示されます。</p>' if i == 'diagnosis' else ''
+        secs += f'  <section class="intro-block" id="{i}">\n    <h2>{esc(t)}</h2>{hint}\n{links(body.strip())}\n  </section>\n\n'
     faq_html = '\n'.join(f'      <div class="faq-item">\n        <h3>Q. {esc(q)}</h3>\n        <p>A. {links(esc(a))}</p>\n      </div>' for q, a in faq)
     rel = ''
     for p, label in g['related']:
@@ -146,7 +148,7 @@ def build(g):
   </section>
 </main>
 
-''' + FOOTER + '\n</body>\n</html>\n'
+''' + FOOTER + ('\n<script src="../../assets/diagnosis.js" defer></script>' if has_diag else '') + '\n</body>\n</html>\n'
 
 
 def build_hub():

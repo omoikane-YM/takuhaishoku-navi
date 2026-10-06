@@ -91,10 +91,10 @@ GUIDES.append(dict(
 </ul>'''),
         ('diagnosis', 'かんたん診断：あなたに合うのはどのタイプ？', '''
 <div class="merit-demerit">
-<div class="merit-box"><h3>「とにかく手間を省きたい」</h3><p>メニュー数が多く、飽きにくいサービスを。お試し購入で味を確かめてから定期便へ。</p></div>
-<div class="merit-box"><h3>「食事制限・数値が気になる」</h3><p>栄養表示が細かく、医師や管理栄養士の監修体制が明記されたサービスを。通院中なら主治医にも相談を。</p></div>
-<div class="merit-box"><h3>「添加物や原材料が気になる」</h3><p>原材料表示と「何を使っていないか」の範囲を確認できるサービスを。</p></div>
-<div class="merit-box"><h3>「まずは気軽に試したい」</h3><p>定期購入の縛りがない、または初回だけ試せるサービスから始める。</p></div>
+<div class="merit-box"><h3>「とにかく手間を省きたい」</h3><p>メニュー数が多く、飽きにくいサービスを選びます。例：[[frozen-meal/delipicks|DELIPICKS]]、[[frozen-meal/meals|Meals]]。まずはお試しで味を確かめてから定期便へ進むと安心です。</p></div>
+<div class="merit-box"><h3>「食事制限・数値が気になる」</h3><p>栄養表示が細かく、監修体制が明記されたサービスを選びます。例：[[frozen-meal/tsurukame-kitchen|Dr.つるかめキッチン]]、[[frozen-meal/medimeal|メディミール]]、[[frozen-meal/taihei|宅配弁当のタイヘイ]]。通院中の方は、主治医にも相談してください。</p></div>
+<div class="merit-box"><h3>「添加物や原材料が気になる」</h3><p>原材料表示と、「何を使っていないか」の範囲を確認できるサービスを選びます。例：[[frozen-meal/fit-food-home|FIT FOOD HOME]]、[[frozen-meal/wanmairu|わんまいる]]、[[frozen-meal/tsukurioki-chef|シェフの無添つくりおき]]。</p></div>
+<div class="merit-box"><h3>「まずは気軽に試したい」</h3><p>定期購入の縛りがない、または初回だけ試せるサービスから始めます。例：[[frozen-meal/yushoku-net|夕食.net（シンプルミール）]]（対応エリア限定）。</p></div>
 </div>'''),
         ('after', '届いたあとの保管と食べ方の注意', '''
 <ul>
@@ -175,10 +175,10 @@ GUIDES.append(dict(
 </ul>'''),
         ('diagnosis', 'かんたん診断', '''
 <div class="merit-demerit">
-<div class="merit-box"><h3>味・食材の質を重視</h3><p>旬の食材や調理法の工夫など、献立の完成度を比べてみましょう。</p></div>
-<div class="merit-box"><h3>栄養バランスと毎日の夕食</h3><p>管理栄養士監修のメニューや、毎日利用しやすい注文方式のサービスが候補になります。</p></div>
-<div class="merit-box"><h3>不在がち</h3><p>置き配や宅配ボックス対応を最優先で確認。冷凍タイプも選択肢です。</p></div>
-<div class="merit-box"><h3>まずは試したい</h3><p>お試しセットで、味・量・調理の手間を確認してから継続を決めます。</p></div>
+<div class="merit-box"><h3>味・食材の質を重視</h3><p>旬の食材や調理法の工夫など、献立の完成度を比べます。例：[[mealkit/oisix|Oisix（おためしセット）]]。</p></div>
+<div class="merit-box"><h3>栄養バランスと毎日の夕食</h3><p>管理栄養士監修のメニューを、毎日の夕食に使えるサービスが候補です。例：[[mealkit/yoshikei|YOSHIKEI（ヨシケイ）ミールキット]]。</p></div>
+<div class="merit-box"><h3>不在がち</h3><p>置き配や宅配ボックスへの対応を最優先で確認します。例：[[mealkit/yoshikei|YOSHIKEI]]は置き配も選べます。冷凍タイプの[[frozen-meal/|冷凍宅配弁当]]も選択肢です。</p></div>
+<div class="merit-box"><h3>まずは試したい</h3><p>お試しセットで、味・量・調理の手間を確認してから継続を決めます。例：[[mealkit/oisix|Oisix（おためしセット）]]。</p></div>
 </div>'''),
     ],
     faq=[
@@ -406,10 +406,10 @@ GUIDES.append(dict(
 </ul>'''),
         ('diagnosis', 'かんたん診断', '''
 <div class="merit-demerit">
-<div class="merit-box"><h3>食品も日用品もまとめて</h3><p>お住まいのエリアで加入できる生協の個人宅配を。品揃えと配送料を確認します。</p></div>
-<div class="merit-box"><h3>野菜にこだわりたい</h3><p>有機野菜・低農薬野菜など、各社の基準と産地の情報を比べます。</p></div>
-<div class="merit-box"><h3>鮮度を重視</h3><p>収穫から発送までの流れが説明されているサービスを。</p></div>
-<div class="merit-box"><h3>まず気軽に試したい</h3><p>おためしセットや資料請求ができるサービスから始めます。</p></div>
+<div class="merit-box"><h3>食品も日用品もまとめて</h3><p>お住まいのエリアで加入できる生協の個人宅配を選びます。例：[[coop-delivery/ouchi-coop|おうちコープ]]（神奈川・静岡・山梨）、[[coop-delivery/kinki-coop|コープの宅配（コープきんき）]]（近畿）。品揃えと配送料を確認しましょう。</p></div>
+<div class="merit-box"><h3>野菜にこだわりたい</h3><p>有機野菜・低農薬野菜など、各社の基準と産地の情報を比べます。例：[[coop-delivery/radish-boya|らでぃっしゅぼーや]]、[[coop-delivery/sakanotochu|坂ノ途中]]。</p></div>
+<div class="merit-box"><h3>鮮度を重視</h3><p>収穫から発送までの流れが説明されているサービスを選びます。例：[[coop-delivery/millet|無農薬野菜のミレー]]（朝穫り野菜を当日発送）。</p></div>
+<div class="merit-box"><h3>まず気軽に試したい</h3><p>おためしセットや資料請求ができるサービスから始めます。例：[[coop-delivery/kinki-coop|コープの宅配（コープきんき）]]（近畿エリア）。</p></div>
 </div>'''),
     ],
     faq=[
