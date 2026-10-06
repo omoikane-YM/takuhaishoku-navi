@@ -9,6 +9,10 @@
 | `make_articles_20261004.py` | 2026-10-04の4記事を生成。**次回の記事化は、このファイルをコピーして `ARTICLES` のデータだけ差し替える**（ヘッダー/フッター/スポンサー枠は同カテゴリの既存記事から流用、FAQPage/Article/Breadcrumb構造化データ付き） | 同じ記事を上書き |
 | `register_articles_20261004.py` | 新記事をカテゴリ一覧の比較表・ItemList・sitemap・トップ新着に登録 | **一度だけ** (assertで二重登録を防止) |
 | `seo_fix_20261004.py` | SEO監査の一括修正 (h4→h3、公開日/更新日表示、OG補完、sitemap lastmod) | **一度だけ** |
+| `adsense_prep.py` | AdSense申請準備 (contactページ新設・プライバシーポリシー追記・フッターにお問い合わせリンク) | **一度だけ** |
+| `add_guide_nav.py` | 全ページのヘッダーナビに「選び方ガイド」を追加 | **一度だけ** |
+| `guide_data.py` / `make_guides.py` | `docs/guide/` の選び方ガイド5本＋一覧を生成 (内容は guide_data.py、`[[カテゴリ/記事|表示名]]` で内部リンク)。sitemapにも登録 | 可 (上書き) |
+| `enhance_categories.py` | カテゴリ一覧9ページに注意点・かんたん診断・追加FAQ(JSON-LD含む)・ガイド導線を追加 | **一度だけ** |
 
 ## 新規A8プログラムを記事化する手順（次回用）
 1. A8 `/program/list/partnered` を提携日降順で開き、`WRITING_GUIDE.md` にプログラムIDが無いものを抽出（"New" バッジは当てにならない。別名プログラムの可能性も詳細ページで確認）。
