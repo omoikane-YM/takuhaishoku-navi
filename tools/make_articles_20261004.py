@@ -3,7 +3,7 @@
 import os, re, json, html
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs')
-BASE = 'https://omoikane-ym.github.io/takuhaishoku-navi/'
+BASE = 'https://takuhaishoku-navi.net/'
 NOW = '2026-10-04T18:00:00+09:00'
 SPONSOR = None
 
@@ -137,7 +137,7 @@ def build(a):
 </head>
 <body>
 {header}
-<p class="breadcrumb"><a href="/takuhaishoku-navi/">トップ</a> &gt; <a href="../">{cat_text}</a> &gt; {esc(a['short'])}</p>
+<p class="breadcrumb"><a href="/">トップ</a> &gt; <a href="../">{cat_text}</a> &gt; {esc(a['short'])}</p>
 
 <main>
   <section class="hero">

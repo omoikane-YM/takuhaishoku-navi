@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from guide_data import GUIDES
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs')
-BASE = 'https://omoikane-ym.github.io/takuhaishoku-navi/'
+BASE = 'https://takuhaishoku-navi.net/'
 DATE = '2026-10-06'
 NOW = DATE + 'T12:00:00+09:00'
 SLUGS = {g['slug'] for g in GUIDES}
@@ -114,7 +114,7 @@ def build(g):
         h = ('../' if p.rstrip('/') in SLUGS or p.split('/')[0] in SLUGS else '../../') + p
         rel += f'      <li><a href="{h}">{esc(label)}</a></li>\n'
     return head(g['title'], g['desc'], url, '../../', extra) + HEADER + f'''
-<p class="breadcrumb"><a href="/takuhaishoku-navi/">トップ</a> &gt; <a href="../">選び方ガイド</a> &gt; {esc(g['short'])}</p>
+<p class="breadcrumb"><a href="/">トップ</a> &gt; <a href="../">選び方ガイド</a> &gt; {esc(g['short'])}</p>
 
 <main>
   <section class="hero">
@@ -165,7 +165,7 @@ def build_hub():
     </div>
 '''
     return head(title, desc, url, '../', extra).replace('og:type" content="article"', 'og:type" content="website"') + HEADER_HUB + f'''
-<p class="breadcrumb"><a href="/takuhaishoku-navi/">トップ</a> &gt; 選び方ガイド</p>
+<p class="breadcrumb"><a href="/">トップ</a> &gt; 選び方ガイド</p>
 
 <main>
   <section class="hero">

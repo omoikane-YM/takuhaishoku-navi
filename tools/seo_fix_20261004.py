@@ -5,7 +5,7 @@
 4. sitemap に lastmod を補完 (記事はdateModified、一覧は配下の最新日)"""
 import os, re, glob
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
-BASE = 'https://omoikane-ym.github.io/takuhaishoku-navi/'
+BASE = 'https://takuhaishoku-navi.net/'
 
 
 def rd(f):

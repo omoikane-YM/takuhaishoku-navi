@@ -2,7 +2,7 @@
 import re, pathlib
 
 DOCS = pathlib.Path(__file__).resolve().parent.parent / "docs"
-BASE = "https://omoikane-ym.github.io/takuhaishoku-navi/"
+BASE = "https://takuhaishoku-navi.net/"
 
 # 1. contact page (privacy page as template)
 priv = (DOCS / "privacy/index.html").read_text(encoding="utf-8")

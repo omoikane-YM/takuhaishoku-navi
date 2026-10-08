@@ -6,7 +6,7 @@ from collections import defaultdict, Counter
 from html.parser import HTMLParser
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
-BASE = 'https://omoikane-ym.github.io/takuhaishoku-navi/'
+BASE = 'https://takuhaishoku-navi.net/'
 
 
 class P(HTMLParser):
@@ -119,7 +119,7 @@ def main():
             if re.match(r'(mailto:|tel:|#|javascript:|data:)', h): continue
             path = h.split('#')[0].split('?')[0]
             if not path: continue
-            if path.startswith('/takuhaishoku-navi/'): tgt = path[len('/takuhaishoku-navi/'):]
+            if path.startswith('/'): tgt = path[len('/'):]
             else: tgt = os.path.normpath(os.path.join(os.path.dirname(rel), path)).replace('\\', '/')
             if tgt in ('', '.'): tgt = 'index.html'
             full = os.path.join(ROOT, tgt)

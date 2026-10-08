@@ -1,7 +1,7 @@
 """2026-10-04 新規4記事を、カテゴリ一覧・ItemList・sitemap・トップ新着に登録する(一度だけ実行)。"""
 import re, os
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs')
-B = 'https://omoikane-ym.github.io/takuhaishoku-navi/'
+B = 'https://takuhaishoku-navi.net/'
 
 
 def rd(p):
