@@ -5,7 +5,7 @@
 | スクリプト | 用途 | 再実行 |
 |---|---|---|
 | `build_home.py` | トップページ `docs/index.html` の `<main>` を再生成。新着リスト(`.new-list`)と各記事のA8バナーを読み取って再利用。カテゴリチップは保持する | 可 (冪等) |
-| `seo_audit.py` | 全ページSEO監査 (title/description/h1/canonical/OG/JSON-LD/alt/リンク切れ/孤立/sitemap)。`sitemap.xml` と `sitemap-main.xml` の一致も検査。`--json out.json` で保存 | 可 |
+| `seo_audit.py` | 全ページSEO監査 (title/description/h1/canonical/OG/JSON-LD/alt/リンク切れ/孤立/sitemap)。`--json out.json` で保存 | 可 |
 | `make_articles_20261004.py` | 2026-10-04の4記事を生成。**次回の記事化は、このファイルをコピーして `ARTICLES` のデータだけ差し替える**（ヘッダー/フッター/スポンサー枠は同カテゴリの既存記事から流用、FAQPage/Article/Breadcrumb構造化データ付き） | 同じ記事を上書き |
 | `register_articles_20261004.py` | 新記事をカテゴリ一覧の比較表・ItemList・sitemap・トップ新着に登録 | **一度だけ** (assertで二重登録を防止) |
 | `seo_fix_20261004.py` | SEO監査の一括修正 (h4→h3、公開日/更新日表示、OG補完、sitemap lastmod) | **一度だけ** |

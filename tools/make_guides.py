@@ -204,7 +204,7 @@ for g in GUIDES:
     write(f"guide/{g['slug']}/index.html", build(g))
 
 # sitemap
-for name in ('sitemap.xml', 'sitemap-main.xml'):
+for name in ('sitemap.xml',):
     p = os.path.join(ROOT, name)
     t = open(p, encoding='utf8').read()
     add = [BASE + 'guide/'] + [f"{BASE}guide/{g['slug']}/" for g in GUIDES]

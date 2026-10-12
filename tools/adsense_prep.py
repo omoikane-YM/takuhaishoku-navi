@@ -102,7 +102,7 @@ for f in DOCS.rglob("*.html"):
 print("footers updated:", n)
 
 # 4. sitemaps
-for name in ("sitemap.xml", "sitemap-main.xml"):
+for name in ("sitemap.xml",):
     sm = DOCS / name
     t = sm.read_text(encoding="utf-8")
     line = f"  <url><loc>{BASE}privacy/</loc></url>"
