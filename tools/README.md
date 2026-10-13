@@ -7,6 +7,10 @@
 | `build_home.py` | トップページ `docs/index.html` の `<main>` を再生成。新着リスト(`.new-list`)と各記事のA8バナーを読み取って再利用。カテゴリチップは保持する | 可 (冪等) |
 | `seo_audit.py` | 全ページSEO監査 (title/description/h1/canonical/OG/JSON-LD/alt/リンク切れ/孤立/sitemap)。`--json out.json` で保存 | 可 |
 | `make_articles_20261004.py` | 2026-10-04の4記事を生成。**次回の記事化は、このファイルをコピーして `ARTICLES` のデータだけ差し替える**（ヘッダー/フッター/スポンサー枠は同カテゴリの既存記事から流用、FAQPage/Article/Breadcrumb構造化データ付き） | 同じ記事を上書き |
+| `make_articles_20261013.py` | 最新の生成テンプレート(h1=title同形+`.hero-catch`、og:image、Article image対応)。**次回はこちらをコピー**。カテゴリは `cat`/`cat_text`/`sibling` で指定 | 同じ記事を上書き |
+| `add_delivery_box_category_20261013.py` | 「宅配ボックス」カテゴリ新設(ナビ全ページ追加・記事移動・一覧生成)。新カテゴリ追加時の参考に | **一度だけ** |
+| `seo_overhaul_20261013.py` | SEO一括修正(og:image・h1短縮・Article image・http→https・Organization・lastmod、CSS v=9) | 可 (冪等) |
+| `make_og_image.py` | OGP画像 `docs/assets/og-image.jpg` を生成 | 可 |
 | `register_articles_20261004.py` | 新記事をカテゴリ一覧の比較表・ItemList・sitemap・トップ新着に登録 | **一度だけ** (assertで二重登録を防止) |
 | `seo_fix_20261004.py` | SEO監査の一括修正 (h4→h3、公開日/更新日表示、OG補完、sitemap lastmod) | **一度だけ** |
 | `adsense_prep.py` | AdSense申請準備 (contactページ新設・プライバシーポリシー追記・フッターにお問い合わせリンク) | **一度だけ** |
@@ -21,7 +25,7 @@
 3. `/program/create-link?programId=…` で「通常広告用」を1回クリック → 全素材の `textarea` から a8mat を一括取得（`WRITING_GUIDE.md` にID・EPCを記録）。
 4. 広告主公式サイトを WebFetch で確認し、事実のみで記事化（体験談は書かない、疾患の治療・改善は断定しない）。
 5. `make_articles_*.py` をコピーして生成 → `register_articles_*.py` で登録 → `seo_audit.py` で確認 → コミット/プッシュ → GitHub Pages反映待ち(curl 200) → A8「広告掲載URL管理」へURL提出。
-6. CSS を変えたら `style.css?v=N` を全ページで更新（現在 v=8）。
+6. CSS を変えたら `style.css?v=N` を全ページで更新（現在 v=9）。
 
 ## 注意
 - ブラウザペインのスクリーンショットが不安定なときは Edge ヘッドレスで撮る: `msedge --headless --screenshot=out.png --window-size=500,H URL`（最小幅約500px）。

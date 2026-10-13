@@ -24,7 +24,7 @@ for slug, desc in re.findall(r'<h2><a href="([^/"]+)/">.*?</a></h2>\s*<p>(.*?)</
 
 # --- バナー展示: カテゴリごとに1つ選ぶ ---
 cats = ['mealkit', 'frozen-meal', 'senior-meal', 'baby-food', 'coop-delivery',
-        'kitchen-goods', 'otoriyose', 'furusato', 'health-food']
+        'kitchen-goods', 'delivery-box', 'otoriyose', 'furusato', 'health-food']
 picks = []
 for c in cats:
     for f in sorted(glob.glob(os.path.join(ROOT, c, '*', 'index.html'))):
@@ -46,6 +46,7 @@ CARDS = [
     ('baby-food', '🍼', '子育て', '離乳食宅配', '手作りが大変な離乳食期に役立つ、宅配の離乳食サービスを紹介します。', 'crop-spoon'),
     ('coop-delivery', '🥬', '安全・産直志向', '食材宅配(生協・産直系)', 'らでぃっしゅぼーや・生活クラブ・コープの宅配など、食材そのものを届けるサービスを紹介します。', 'crop-veg'),
     ('kitchen-goods', '🔪', '調理器具・食材保存', 'キッチン用品', '包丁・フライパンから真空パック機まで、毎日の料理を快適にするキッチン用品を紹介します。', 'crop-wok'),
+    ('delivery-box', '📦', '再配達対策・置き配', '宅配ボックス', '置き型・工事不要など、自宅向けの宅配ボックスの選び方と取り扱いショップを紹介します。', 'crop-bento'),
     ('otoriyose', '🎁', 'ギフト・ご当地グルメ', 'お取り寄せグルメ', '馬刺し・和牛・カニ・海産物・京漬物など、産地から直送されるご当地物産を紹介します。', 'crop-bento'),
     ('furusato', '🏠', '節税・返礼品', 'ふるさと納税', 'お肉・海鮮・米など、ふるさと納税の返礼品で食卓を豊かにするサービスを紹介します。', 'crop-wok'),
     ('health-food', '🌿', '食習慣・健康サポート', '美容・健康食品', '毎日の食習慣を手軽に整えたい方向けの、美容・健康食品を紹介します。', 'crop-soup'),

@@ -210,6 +210,7 @@ main {
   color: var(--ink);
 }
 .hero p { color: #4a3f35; max-width: 680px; margin: 0; padding-right: 40px; }
+.hero p.hero-catch { color: var(--ink); font-weight: 700; font-size: 1.02rem; line-height: 1.7; margin: 8px 0 10px; }
 
 .disclosure-badge {
   display: inline-block;

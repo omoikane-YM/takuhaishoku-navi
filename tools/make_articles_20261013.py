@@ -25,7 +25,7 @@ def build(a):
     header = re.search(r'<header class="site-header">.*?</header>', sib, re.S).group(0)
     footer = re.search(r'<footer class="site-footer">.*?</footer>', sib, re.S).group(0)
     sponsor = re.search(r'  <section class="intro-block">\s*<h2>スポンサーリンク</h2>.*?</section>', sib, re.S).group(0)
-    cat_text = re.search(r'<p class="breadcrumb">.*?<a href="\.\./">(.*?)</a>', sib, re.S).group(1)
+    cat_text = a.get('cat_text') or re.search(r'<p class="breadcrumb">.*?<a href="\.\./">(.*?)</a>', sib, re.S).group(1)
     url = f"{BASE}{a['cat']}/{a['slug']}/"
     ttl = a['title']
     mat = a['cta_mat']
@@ -73,7 +73,7 @@ def build(a):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&amp;display=swap">
-<link rel="stylesheet" href="../../assets/style.css?v=8">
+<link rel="stylesheet" href="../../assets/style.css?v=9">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="宅配食ナビ">
@@ -81,7 +81,11 @@ def build(a):
 <meta property="og:description" content="{esc(a['desc'])}">
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="ja_JP">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{BASE}assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{BASE}assets/og-image.jpg">
 <script type="application/ld+json">
 {{
   "@context": "https://schema.org",
@@ -98,6 +102,7 @@ def build(a):
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": {json.dumps(ttl, ensure_ascii=False)},
+  "image": "{BASE}assets/og-image.jpg",
   "description": {json.dumps(a['desc'], ensure_ascii=False)},
   "author": {{
     "@type": "Organization",
@@ -141,8 +146,9 @@ def build(a):
 <main>
   <section class="hero">
     <div class="hero-inner">
-      <h1>{esc(a['h1'])}</h1>
+      <h1>{esc(ttl)}</h1>
       <p class="post-meta"><span>公開日 <time datetime="2026-10-13">2026年10月13日</time></span></p>
+      <p class="hero-catch">{esc(a['h1'])}</p>
       <p>{esc(a['lead'])}</p>
     </div>
   </section>
@@ -301,7 +307,7 @@ ARTICLES = [
         related=[('../fit-food-home/', 'frozen-meal/fit-food-home'), ('../greenspoon/', 'frozen-meal/greenspoon')],
     ),
     dict(
-        cat='kitchen-goods', slug='takuhai-box-meihinkan', sibling='kitchen-goods/food-sealer', short='宅配ボックス名品館',
+        cat='delivery-box', cat_text='宅配ボックス', slug='takuhai-box-meihinkan', sibling='kitchen-goods/food-sealer', short='宅配ボックス名品館',
         title='宅配ボックス名品館（ルスネコボックス）の評判・メリット・デメリット',
         desc='工事不要の置き型宅配ボックス「ルスネコボックス」シリーズを扱う「宅配ボックス名品館」について、公式情報をもとにモデル・ロック方式・価格帯・メリット・デメリットを整理しました。',
         h1='宅配ボックス名品館最大の魅力は、工事不要の置き型宅配ボックス「ルスネコボックス」を、ロック方式や容量の違うモデルから選べること',
@@ -345,7 +351,7 @@ ARTICLES = [
              ('保証はありますか？', '商品名に「2年保証」の記載があります。LINE友だち追加で1年保証が付くキャンペーンも案内されています。詳細は公式サイトでご確認ください。'),
              ('価格帯はどのくらいですか？', '2026年10月時点の公式サイトでは、ONEの17,424円（税込）から、Excellentの最大65,612円（税込）までのモデルが確認できます。')],
         affiliate=COMMON_AFF,
-        related=[('../food-sealer/', 'kitchen-goods/food-sealer'), ('../greenpan/', 'kitchen-goods/greenpan')],
+        related=[('../../frozen-meal/muscle-deli/', 'frozen-meal/muscle-deli'), ('../', 'delivery-box')],
     ),
 ]
 
