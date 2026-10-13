@@ -25,7 +25,7 @@
 3. `/program/create-link?programId=…` で「通常広告用」を1回クリック → 全素材の `textarea` から a8mat を一括取得（`WRITING_GUIDE.md` にID・EPCを記録）。
 4. 広告主公式サイトを WebFetch で確認し、事実のみで記事化（体験談は書かない、疾患の治療・改善は断定しない）。
 5. `make_articles_*.py` をコピーして生成 → `register_articles_*.py` で登録 → `seo_audit.py` で確認 → コミット/プッシュ → GitHub Pages反映待ち(curl 200) → A8「広告掲載URL管理」へURL提出。
-6. CSS を変えたら `style.css?v=N` を全ページで更新（現在 v=9）。
+6. CSS を変えたら `style.css?v=N` を全ページで更新（現在 v=10）。
 
 ## 注意
 - ブラウザペインのスクリーンショットが不安定なときは Edge ヘッドレスで撮る: `msedge --headless --screenshot=out.png --window-size=500,H URL`（最小幅約500px）。

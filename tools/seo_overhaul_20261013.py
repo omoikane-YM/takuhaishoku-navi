@@ -30,7 +30,7 @@ for f in glob.glob(os.path.join(ROOT, '**', '*.html'), recursive=True):
     s = open(f, encoding='utf8').read()
     o = s
 
-    s = s.replace('style.css?v=8', 'style.css?v=9')
+    s = s.replace('style.css?v=8', 'style.css?v=10')
 
     # og:image
     if rel != '404.html' and 'og:image' not in s:
