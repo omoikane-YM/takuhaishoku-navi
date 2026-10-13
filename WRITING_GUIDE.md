@@ -577,3 +577,7 @@ A8.netの参加中プログラム一覧には、サイトのテーマと無関�
 ## 関連ファイル
 - `AGENTS.md` / `AFFILIATE_RULES.md`（Aqua Healingリポジトリの制約が一次情報。本リポジトリにはまだ作成していないため、今後同内容を`takuhaishoku-navi`にも作成する）
 - `scripts/generate-article.mjs`（このガイドラインをテンプレートに反映する、未作成）
+
+## 2026-10-13 追加（2記事）
+- **Muscle Deli（株式会社YOUR MEAL、s00000020311001、2026-10-09提携、EPC4.63）**：`/frozen-meal/muscle-deli/`。成果報酬：新規購入2,000円。成果条件：広告主新規、WEB注文後30日以内の入金確認。否認条件：返金・返品・キャンセル、リスティング違反、受取拒否。ダイエット/痩せる等の効果断定は避け、公式の栄養基準（4プラン）と継続割・送料のみ記載。CTAは「Muscle Deli」テキスト a8mat=4BECH2+2J3FF6+4CPY+5YJRM、heroは300×250 a8mat=4BECH2+2J3FF6+4CPY+62MDD。
+- **宅配ボックス名品館（有限会社ドリームチーム、s00000027207001、2026-10-09提携、EPC1.09）**：`/kitchen-goods/takuhai-box-meihinkan/`（宅配食サイトのため暮らし系としてキッチン用品カテゴリに掲載）。成果報酬：新規購入(税抜)7%。否認条件：重複・未入金・キャンセル、リスティング違反、代引き決済（ポイントサイト/セルフバック）。飛び先は https://www.takuhaiboxes.com/ 内。CTA a8mat=4BECH2+M158Y+5TXI+5YJRM、hero 300×250 a8mat=4BECH2+M158Y+5TXI+5Z6WX。
