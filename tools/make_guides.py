@@ -77,6 +77,8 @@ def head(title, desc, url, rel, extra=''):
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 {extra}{GA}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3734732668384938"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 '''

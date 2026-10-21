@@ -30,3 +30,6 @@
 ## 注意
 - ブラウザペインのスクリーンショットが不安定なときは Edge ヘッドレスで撮る: `msedge --headless --screenshot=out.png --window-size=500,H URL`（最小幅約500px）。
 - `build_home.py` は旧版だと新着チップを消す不具合があった（修正済み）。消えたら `git checkout docs/index.html`。
+
+## AdSense
+All pages carry the AdSense snippet (ca-pub-3734732668384938) just before `</head>`; generator scripts include it. `docs/ads.txt` holds the publisher line.
