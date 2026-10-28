@@ -48,6 +48,15 @@ GA = '''<!-- Google tag (gtag.js) -->
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-9SNYF19K6S');
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a[href*="px.a8.net"]');
+    if (!a) return;
+    gtag('event', 'a8_click', {
+      link_url: a.href,
+      link_text: (a.textContent || '').trim().slice(0, 60),
+      page_path: location.pathname
+    });
+  });
 </script>'''
 
 
