@@ -245,7 +245,6 @@ GUIDES.append(dict(
 <tr><td>塩分・カロリー・たんぱく質の制限</td><td>[[senior-meal/medifoods|メディカルフードサービス]]（病院・介護施設にも選ばれてきた制限食）</td></tr>
 <tr><td>噛む力・飲み込む力への配慮</td><td>[[senior-meal/shokurakuzen|食楽膳]]（4段階の食形態）</td></tr>
 <tr><td>持病に合わせた専門的な食事管理</td><td>[[frozen-meal/tsurukame-kitchen|Dr.つるかめキッチン]]（医師監修の治療食）</td></tr>
-<tr><td>離れて暮らす親のサービスを比較したい</td><td>[[senior-meal/anshin-soudan|シニアのあんしん相談室]]（郵便番号から配達可能な宅配食を検索・比較）</td></tr>
 </tbody></table></div>
 <p>見守りや費用面を重視する場合は、手渡し配達の対面配達サービスや、自治体の配食サービスも選択肢です。</p>'''),
         ('municipal', '自治体の配食サービスも確認を', '''
