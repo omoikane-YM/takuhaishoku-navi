@@ -388,7 +388,6 @@ GUIDES.append(dict(
 <thead><tr><th>重視するポイント</th><th>サービス（公開情報にもとづく概要）</th></tr></thead>
 <tbody>
 <tr><td>野菜の味・安全性</td><td>[[coop-delivery/radish-boya|らでぃっしゅぼーや]]（独自の厳しい基準をクリアした有機野菜・低農薬野菜）</td></tr>
-<tr><td>鮮度</td><td>[[coop-delivery/millet|無農薬野菜のミレー]]（朝穫り野菜を千葉県から当日発送）</td></tr>
 <tr><td>環境配慮・新規就農者の応援</td><td>[[coop-delivery/sakanotochu|坂ノ途中]]（化学合成農薬・化学肥料不使用の野菜を京都から）</td></tr>
 <tr><td>生協の品揃え（神奈川・静岡・山梨）</td><td>[[coop-delivery/ouchi-coop|おうちコープ]]（約3,000品目、条件を満たすと宅配料110円）</td></tr>
 <tr><td>生協の品揃え（近畿）</td><td>[[coop-delivery/kinki-coop|コープの宅配（コープきんき）]]（近畿5府県で毎週約4,000点以上から選べる）</td></tr>
@@ -407,7 +406,6 @@ GUIDES.append(dict(
 <div class="merit-demerit">
 <div class="merit-box"><h3>食品も日用品もまとめて</h3><p>お住まいのエリアで加入できる生協の個人宅配を選びます。例：[[coop-delivery/ouchi-coop|おうちコープ]]（神奈川・静岡・山梨）、[[coop-delivery/kinki-coop|コープの宅配（コープきんき）]]（近畿）。品揃えと配送料を確認しましょう。</p></div>
 <div class="merit-box"><h3>野菜にこだわりたい</h3><p>有機野菜・低農薬野菜など、各社の基準と産地の情報を比べます。例：[[coop-delivery/radish-boya|らでぃっしゅぼーや]]、[[coop-delivery/sakanotochu|坂ノ途中]]。</p></div>
-<div class="merit-box"><h3>鮮度を重視</h3><p>収穫から発送までの流れが説明されているサービスを選びます。例：[[coop-delivery/millet|無農薬野菜のミレー]]（朝穫り野菜を当日発送）。</p></div>
 <div class="merit-box"><h3>まず気軽に試したい</h3><p>おためしセットや資料請求ができるサービスから始めます。例：[[coop-delivery/kinki-coop|コープの宅配（コープきんき）]]（近畿エリア）。</p></div>
 </div>'''),
     ],
