@@ -17,6 +17,7 @@
 | `add_guide_nav.py` | 全ページのヘッダーナビに「選び方ガイド」を追加 | **一度だけ** |
 | `guide_data.py` / `make_guides.py` | `docs/guide/` の選び方ガイド5本＋一覧を生成 (内容は guide_data.py、`[[カテゴリ/記事|表示名]]` で内部リンク)。sitemapにも登録 | 可 (上書き) |
 | `enhance_categories.py` | カテゴリ一覧9ページに注意点・かんたん診断・追加FAQ(JSON-LD含む)・ガイド導線を追加 | **一度だけ** |
+| `touch_modified.py` | **記事を変更・追加したらコミット前に必ず実行**。変更された記事(git検出)の更新日(表示/dateModified/sitemap lastmod)を今日にする。`--slugs`/`--all`/日付指定も可 | 可 (冪等) |
 | `add_article_faqs.py` + `faq/*.py` | 個別記事にFAQ(HTML・FAQPage JSON-LD・目次)を追加。`python tools/add_article_faqs.py <faqモジュール名>`。FAQは記事本文・公式サイトで確認できた事実のみで書く。FAQPage既存の記事はスキップ | 可 (冪等) |
 
 ## 新規A8プログラムを記事化する手順（次回用）
