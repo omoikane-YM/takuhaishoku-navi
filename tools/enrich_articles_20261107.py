@@ -160,8 +160,8 @@ TOC_LI = '<li><a href="#details">商品ラインナップと価格の目安</a><
 NL = "\n"
 
 
-def main():
-    for slug, a in ARTICLES.items():
+def apply(articles):
+    for slug, a in articles.items():
         p = DOCS / slug / "index.html"
         t = p.read_text(encoding="utf-8")
         if 'id="details"' in t:  # 再実行時は置き換え
@@ -173,6 +173,10 @@ def main():
         t = re.sub(r'(<li><a href="#recommended">)', lambda mm: TOC_LI + NL + "      " + mm.group(1), t, count=1)
         p.write_text(t, encoding="utf-8")
         print("ok", slug)
+
+
+def main():
+    apply(ARTICLES)
 
 
 if __name__ == "__main__":
