@@ -11,6 +11,19 @@ NOW = DATE + 'T12:00:00+09:00'
 SLUGS = {g['slug'] for g in GUIDES}
 
 
+def gdate(g):
+    return g.get('date', DATE)
+
+
+def gnow(g):
+    return gdate(g) + 'T12:00:00+09:00'
+
+
+def jp(d):
+    y, m, dd = d.split('-')
+    return f'{y}年{int(m)}月{int(dd)}日'
+
+
 def esc(s):
     return html.escape(s, quote=False)
 
@@ -109,7 +122,7 @@ def build(g):
     extra += ld({"@context": "https://schema.org", "@type": "Article", "headline": g['title'], "description": g['desc'],
                  "author": {"@type": "Organization", "name": "宅配食ナビ"},
                  "publisher": {"@type": "Organization", "name": "宅配食ナビ", "url": BASE},
-                 "mainEntityOfPage": {"@type": "WebPage", "@id": url}, "datePublished": NOW, "dateModified": NOW})
+                 "mainEntityOfPage": {"@type": "WebPage", "@id": url}, "datePublished": gnow(g), "dateModified": gnow(g)})
     extra += ld({"@context": "https://schema.org", "@type": "FAQPage",
                  "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": plain(a)}} for q, a in faq]})
     toc = '\n'.join(f'      <li><a href="#{i}">{esc(t)}</a></li>' for i, t, _ in g['sections'])
@@ -131,7 +144,7 @@ def build(g):
   <section class="hero">
     <div class="hero-inner">
       <h1>{esc(g['title'])}</h1>
-      <p class="post-meta"><span>公開日 <time datetime="{DATE}">2026年10月6日</time></span></p>
+      <p class="post-meta"><span>公開日 <time datetime="{gdate(g)}">{jp(gdate(g))}</time></span></p>
       <p>{esc(g['lead'])}</p>
     </div>
   </section>

@@ -29,6 +29,8 @@
 6. CSS を変えたら `style.css?v=N` を全ページで更新（現在 v=10）。
 
 ## 注意
+- 記事タイトルは2026-11-18から「{名前}の評判・口コミ｜料金・メリット・デメリット」(接尾辞なし)に統一、カテゴリ一覧は「おすすめ比較【2026年版】」。旧generator(make_articles_*.py)を再実行するとこの形に戻るので、再生成した場合は同じ置換をやり直すこと。
+- `make_guides.py` は旧ガイド5本を再生成すると後続のSEO修正(og:image等)が消えるので、**新ガイド追加時は生成後に既存5本とhubを `git checkout` で戻し、hubへ手で追記**し、`seo_overhaul_20261013.py` を実行する(2026-11-18の osechi-guide / furusato-guide で実施)。
 - ブラウザペインのスクリーンショットが不安定なときは Edge ヘッドレスで撮る: `msedge --headless --screenshot=out.png --window-size=500,H URL`（最小幅約500px）。
 - `build_home.py` は旧版だと新着チップを消す不具合があった（修正済み）。消えたら `git checkout docs/index.html`。
 
