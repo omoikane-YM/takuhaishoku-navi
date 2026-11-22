@@ -60,7 +60,7 @@ for slug, icon, tag, name, desc, img in CARDS:
         <span class="tag">{tag}</span>
         <h2><a href="{slug}/">{name}</a></h2>
         <p>{desc}</p>
-        <span class="card-link">カテゴリを見る</span>
+        <a class="card-link" href="{slug}/">カテゴリを見る</a>
       </div>
     </article>''')
 cards_html = '\n'.join(cards)

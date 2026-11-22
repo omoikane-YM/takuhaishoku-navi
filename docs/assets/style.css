@@ -156,7 +156,9 @@ section.intro-block h2, .category-card h2 { margin-top: 0; }
 @media (max-width: 860px) {
   .site-nav { width: 100%; overflow-x: auto; margin: 0 -4px; padding-bottom: 4px; scrollbar-width: none; }
   .site-nav::-webkit-scrollbar { display: none; }
-  .site-nav ul { flex-wrap: nowrap; }
+  .site-nav ul { flex-wrap: nowrap; padding-right: 36px; }
+  /* 右端をフェードさせて「まだ横に続く」ことを示す */
+  .site-nav { -webkit-mask-image: linear-gradient(to right, #000 88%, transparent); mask-image: linear-gradient(to right, #000 88%, transparent); }
 }
 
 .breadcrumb {
@@ -826,12 +828,12 @@ p > a[style*="var(--color-primary)"][style*="border-radius:999px"]:active { tran
   border: 1.5px solid var(--color-accent);
   margin-bottom: 8px;
 }
-.category-card h2 { margin: 0 0 8px; padding: 0; font-size: 1.12rem; }
+.category-card h2 { position: static; margin: 0 0 8px; padding: 0; font-size: 1.12rem; }   /* static必須: relativeだとカード全体リンクが見出しだけになる */
 .category-card h2::before, .category-card h2::after { display: none; }
 .category-card h2 a { color: var(--ink); }
 .category-card h2 a::after { content: ""; position: absolute; inset: 0; }   /* カード全体をリンクに */
 .category-card p { color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.7; margin: 0 0 14px; }
-.card-link { margin-top: auto; font-weight: 700; font-size: 0.85rem; color: var(--color-primary-dark); }
+.card-link { position: relative; z-index: 1; text-decoration: underline; text-underline-offset: 4px; margin-top: auto; font-weight: 700; font-size: 0.85rem; color: var(--color-primary-dark); }
 .card-link::after { content: " →"; transition: margin .15s; }
 .category-card:hover .card-link::after { margin-left: 6px; }
 @media (max-width: 900px) { .category-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -887,3 +889,8 @@ p > a[style*="var(--color-primary)"][style*="border-radius:999px"]:active { tran
 /* 記事の公開日・更新日 */
 .post-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 12px 0 10px !important; padding-right: 0 !important; font-size: 0.78rem; color: var(--color-text-muted); }
 .post-meta span::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: var(--color-warm); border: 1.5px solid var(--ink); vertical-align: 1px; }
+
+/* スマホ: 比較表は横スクロールできることを明示 */
+@media (max-width: 700px) {
+  .compare-table-wrap::before { content: "← 表は横にスクロールできます（行をタップで記事へ）"; display: block; position: sticky; left: 0; padding: 6px 12px; font-size: 0.75rem; font-weight: 700; color: var(--color-text-muted); background: var(--mint); border-bottom: 2px solid var(--ink); }
+}
