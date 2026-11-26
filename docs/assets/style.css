@@ -226,6 +226,10 @@ main {
   margin-bottom: 14px;
 }
 
+@media (max-width: 480px) {
+  .disclosure-badge { font-size: 0.68rem; padding: 2px 8px; text-wrap: balance; }
+}
+
 /* ---------- バナー ---------- */
 .hero-banner {
   text-align: center;
@@ -892,5 +896,11 @@ p > a[style*="var(--color-primary)"][style*="border-radius:999px"]:active { tran
 
 /* スマホ: 比較表は横スクロールできることを明示 */
 @media (max-width: 700px) {
-  .compare-table-wrap::before { content: "← 表は横にスクロールできます（行をタップで記事へ）"; display: block; position: sticky; left: 0; padding: 6px 12px; font-size: 0.75rem; font-weight: 700; color: var(--color-text-muted); background: var(--mint); border-bottom: 2px solid var(--ink); }
+  .compare-table-wrap:has(th:nth-child(3))::before { content: "← 表は横にスクロールできます"; display: block; position: sticky; left: 0; padding: 6px 12px; font-size: 0.75rem; font-weight: 700; color: var(--color-text-muted); background: var(--mint); border-bottom: 2px solid var(--ink); }
+  .compare-table-wrap:has(th:nth-child(3)):has(.clickable-row)::before { content: "← 表は横にスクロールできます（行をタップで記事へ）"; }
+  /* 2列の表は画面幅に収める */
+  .compare-table-wrap:not(:has(th:nth-child(3), td:nth-child(3))) .compare-table { min-width: 0; }
+  .compare-table-wrap:not(:has(th:nth-child(3), td:nth-child(3))) :is(th, td) { padding: 12px; white-space: normal; overflow-wrap: anywhere; }
+  .compare-table-wrap:not(:has(th:nth-child(3), td:nth-child(3))) td:first-child { width: 34%; }
+  .compare-table-wrap:not(:has(th:nth-child(3), td:nth-child(3))) td:last-child a { white-space: normal; }
 }
