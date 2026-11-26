@@ -321,7 +321,7 @@ GUIDES.append(dict(
 <div class="compare-table-wrap"><table class="compare-table">
 <thead><tr><th>時期・用途</th><th>サービス（公開情報にもとづく概要）</th></tr></thead>
 <tbody>
-<tr><td>離乳食（月齢別）</td><td>[[baby-food/first-spoon|ファーストスプーン]]（月齢別の完全栄養設計、無添加の離乳食）</td></tr>
+<tr><td>離乳食（月齢別）</td><td>[[baby-food/first-spoon|ファーストスプーン]]（月齢別に手作りした、無添加の離乳食）</td></tr>
 <tr><td>幼児食（1歳半〜6歳）</td><td>[[baby-food/mogumo|モグモ]]（管理栄養士監修、無添加メニュー9割以上の幼児食）</td></tr>
 <tr><td>成長期の子ども（小学生・中学生）</td><td>[[baby-food/mogumodeli|モグモデリ]]（保存料・着色料・香料不使用の冷凍ワンプレート、電子レンジ約4分）</td></tr>
 </tbody></table></div>'''),
